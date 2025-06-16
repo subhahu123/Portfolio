@@ -124,9 +124,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code", // Add your actual verification code
-  },
+  // verification: {
+  //   google: "your-google-verification-code", // Add your actual verification code
+  // },
   other: {
     "msapplication-TileColor": "#6366f1",
     "theme-color": "#6366f1",

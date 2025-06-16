@@ -7,7 +7,7 @@ Disallow: /_next/
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://aakashsondagar.vercel.app/sitemap.xml
+Sitemap: https://aakashsondagar.me/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1
