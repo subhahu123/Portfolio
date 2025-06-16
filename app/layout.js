@@ -1,4 +1,4 @@
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Manrope, JetBrains_Mono, Geist, Geist_Mono } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -10,6 +10,7 @@ import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+// Option 1: Current setup (recommended)
 export const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -23,6 +24,29 @@ export const manrope = Manrope({
   variable: "--font-manrope",
   preload: true,
 });
+
+// Option 2: More modern/distinctive
+// export const geist = Geist({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-geist",
+//   preload: true,
+// });
+
+// export const geistMono = Geist_Mono({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-geist-mono",
+//   preload: true,
+// });
+
+// Option 3: Developer-focused
+// export const jetbrainsMono = JetBrains_Mono({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-jetbrains-mono",
+//   preload: true,
+// });
 
 export function robots() {
   return {
