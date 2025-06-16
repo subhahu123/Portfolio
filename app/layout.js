@@ -1,4 +1,4 @@
-import { Inter, Manrope, JetBrains_Mono, Geist, Geist_Mono } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import { ViewTransitions } from "next-view-transitions";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -10,7 +10,6 @@ import ThemeProvider from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// Option 1: Current setup (recommended)
 export const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -24,29 +23,6 @@ export const manrope = Manrope({
   variable: "--font-manrope",
   preload: true,
 });
-
-// Option 2: More modern/distinctive
-// export const geist = Geist({
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-geist",
-//   preload: true,
-// });
-
-// export const geistMono = Geist_Mono({
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-geist-mono",
-//   preload: true,
-// });
-
-// Option 3: Developer-focused
-// export const jetbrainsMono = JetBrains_Mono({
-//   subsets: ["latin"],
-//   display: "swap",
-//   variable: "--font-jetbrains-mono",
-//   preload: true,
-// });
 
 export function robots() {
   return {
@@ -75,7 +51,7 @@ export const metadata = {
   keywords: [
     "Aakash Sondagar",
     "Software Engineer",
-    "Full Stack Developer", 
+    "Full Stack Developer",
     "Solution Architect",
     "Cloud Architect",
     "Web Development",
@@ -96,12 +72,12 @@ export const metadata = {
     "Next.js",
     "Node.js",
     "JavaScript",
-    "TypeScript"
+    "TypeScript",
   ].join(", "),
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.png", sizes: "16x16", type: "image/png" }
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
     ],
     shortcut: "/favicon.png",
     apple: "/favicon.png",
@@ -167,17 +143,17 @@ const jsonLd = {
   worksFor: {
     "@type": "Organization",
     name: "Wohlig",
-    url: "https://www.wohlig.com/"
+    url: "https://www.wohlig.com/",
   },
   description: description,
   alumniOf: {
     "@type": "EducationalOrganization",
     name: "Sardar Patel Institute of Technology",
-    url: "https://www.spit.ac.in/"
+    url: "https://www.spit.ac.in/",
   },
   knowsAbout: [
     "Software Engineering",
-    "Cloud Architecture", 
+    "Cloud Architecture",
     "Full Stack Development",
     "System Design",
     "Web Development",
@@ -185,7 +161,7 @@ const jsonLd = {
     "Next.js",
     "Node.js",
     "Google Cloud Platform",
-    "AWS"
+    "AWS",
   ],
   sameAs: [
     "https://github.com/Aakash-Sondagar",
@@ -195,8 +171,8 @@ const jsonLd = {
   address: {
     "@type": "PostalAddress",
     addressLocality: "Mumbai",
-    addressCountry: "IN"
-  }
+    addressCountry: "IN",
+  },
 };
 
 const RootLayout = ({ children }) => {
@@ -204,10 +180,17 @@ const RootLayout = ({ children }) => {
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://vercel.com" />
         <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
         <meta name="format-detection" content="telephone=no" />
         <script
           type="application/ld+json"
