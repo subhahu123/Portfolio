@@ -1,6 +1,4 @@
-import { formatDate } from "@/components/common";
-
-export const baseUrl = "https://aakashsondagar.vercel.app";
+export const baseUrl = "https://aakashsondagar.me";
 
 export const navItems = {
   "/work": {
