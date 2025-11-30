@@ -5,7 +5,7 @@ export const Name = () => {
   return (
     <div className="mb-8">
       <h1 className="flex text-3xl text-gray-900 dark:text-gray-100 font-semibold mb-0">
-        Aakash Sondagar
+        Aakash S. Sondagar
       </h1>
       <h4 className="text-gray-600 dark:text-gray-400 font-light text-base my-0">
         Software Engineer
